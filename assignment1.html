@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= "utf-8">
+        <title>Michael Mylett - assignment1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            html, body {
+                margin: 0;
+                width: 100vw;
+                height: 100vh;
+            }
+            h1 {
+                color:white;
+                font-family:arial;
+            }
+            h2 {
+                color:white;
+                font-family:arial;
+            }
+            p {
+                color:white;
+                font-family:arial;
+            }
+            .video-container {
+                position:fixed;
+                margin:0;
+                width:100%;
+                height:100%;
+                z-index:-1;
+            }
+            .video-container video{
+                width:100%;
+                height:100%;
+                object-fit: fill;
+            }
+            .name-container {
+                position:fixed;
+                left:30%;
+                top:30%;
+                z-index:1;
+                font-size:medium;
+            }
+            .menu-container {
+                position:fixed;
+                right:10%;
+                top:10%;
+                z-index:1;
+                font-size:medium;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- This was in the wrong place causing the text to appear outside the background
+        <div class="name-container">
+            <h1>Michael Mylett</h1>
+        </div>
+        <div class="menu-container">
+
+        </div>
+        -->
+        <div class="video-container">
+            <video autoplay loop muted>
+                <source src="background.mp4" type="video/mp4">
+            </video>
+            <div class="name-container">
+                <h1>Michael Mylett</h1>
+                <h2>Here's my home page.</h2>
+            </div>
+            <div class="menu-container">
+                <p><i class="fa fa-address-card"></i> About Me</p>
+                <p><i class="fa fa-envelope"></i> Resume</p>
+                <p><i class="fa fa-gamepad"></i> Hobbies</p>
+                <p><i class="fa fa-desktop"></i> Work</p>
+            </div>
+        </div>
+        
+    </body>
+</html>
